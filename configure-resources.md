@@ -45,7 +45,7 @@ for net in net_conf:
 ::: {.cell .code}
 ```python
 # prepare a "hosts" file that has names and addresses of every node
-hosts_txt = [ "%s\t%s" % (n['name'], n['addr']) for net in net_conf  for n in net['nodes'] if type(n) is dict and n['addr']]
+hosts_txt = [ "%s\t%s" % ( n['addr'], n['name'] ) for net in net_conf  for n in net['nodes'] if type(n) is dict and n['addr']]
 for n in slice.get_nodes():
     for h in hosts_txt:
         n.execute("echo %s | sudo tee -a /etc/hosts" % h)
