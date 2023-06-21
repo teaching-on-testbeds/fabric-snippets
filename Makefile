@@ -1,4 +1,9 @@
 define EXAMPLE
+
+::: {.cell .markdown}
+### Define configuration for this experiment
+:::
+
 ::: {.cell .code}
 ```python
 slice_name="example-" + fablib.get_bastion_username()
