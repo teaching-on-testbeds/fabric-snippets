@@ -6,7 +6,7 @@ This repository collects snippets that are commonly used across many FABRIC note
 For example, an experiment might:
 
 * Configure the FABRIC Jupyter environment (`fab-config.md`)
-* Define the slice name and the experiment configuration (experiment specific, not in this repository)
+* Define the slice name and the experiment configuration (experiment specific, an example showing the format is given in `example.md`)
 * Reserve resources for the experiment and wait for them to be ready (`reserve-resources.md`)
 * Configure the resources: add IPv4 addresses to experiment interfaces, bring interfaces up, add static routes, set up hosts files, enable IPv4 forwarding, install packages (`configure-resources.md`)
 * Draw the slice topology (`draw-topo-detailed-labels.md` or `draw-topo.md`)
