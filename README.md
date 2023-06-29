@@ -9,6 +9,7 @@ For example, an experiment might:
 * Define the slice name and the experiment configuration (experiment specific, an example showing the format is given in `example.md`)
 * Reserve resources for the experiment and wait for them to be ready (`reserve-resources.md`)
 * Configure the resources: add IPv4 addresses to experiment interfaces, bring interfaces up, add static routes, set up hosts files, enable IPv4 forwarding, install packages (`configure-resources.md`)
+* Turn off segment offload (this is useful for educational experiments where we care about frame sizes) (`offload-off.md`)
 * Draw the slice topology (`draw-topo-detailed-labels.md` or `draw-topo.md`)
 * Execute the experiment (experiment specific, not in this repository)
 * Delete the resources in the slice (`delete-slice.md`)
