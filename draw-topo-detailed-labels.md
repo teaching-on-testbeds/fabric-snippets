@@ -1,6 +1,6 @@
 
 ::: {.cell .markdown}
-####  Draw the network topology
+###  Draw the network topology
 :::
 
 ::: {.cell .markdown}
