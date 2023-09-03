@@ -66,6 +66,11 @@ slice.submit()
 ```
 :::
 
+::: {.cell .markdown}
+
+If something goes wrong, you can delete the slice from the [FABRIC web interface](https://portal.fabric-testbed.net/experiments#slices) - find this slice in your slice list, click, and delete. Then, you can start again at the beginning of this notebook, potentially using a different site(s).
+
+:::
 
 ::: {.cell .code}
 ```python
