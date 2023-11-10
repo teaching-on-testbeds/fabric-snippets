@@ -15,6 +15,7 @@ For example, an experiment might:
 * Delete the resources in the slice (`delete-slice.md`)
 
 Also in this repository, there is an example of a `Makefile` that generates a complete Python notebook for FABRIC using these snippets (with an example experiment configuration that is defined in the Makefile).
+
 ### Defining the experiment configuration
 
 These snippets assume the experiment configuration is defined near the top of the notebook, including `slice_name`, `node_conf`, `net_conf`, `route_conf`, and `exp_conf`, as in the following example:
@@ -39,3 +40,16 @@ route_conf = [
 ]
 exp_conf = {'cores': sum([ n['cores'] for n in node_conf]), 'nic': sum([len(n['nodes']) for n in net_conf]) }
 ```
+
+### Adding this to your project
+
+You can add this repo to your existing project as a submodule - 
+
+```
+git submodule add https://github.com/teaching-on-testbeds/fabric-snippets
+git add .gitmodules fabric-snippets/
+git commit -m "Add FABRIC snippets as submodule"
+git push
+```
+
+Then, when you clone your project, add the `--recurse-submodules` argument.
