@@ -19,7 +19,7 @@ for n in node_conf:
     if len(n['packages']):
         node = slice.get_node(n['name'])
         pkg = " ".join(n['packages'])
-        node.execute_thread("sudo apt update; sudo apt -y install %s" % pkg)
+        node.execute_thread("sudo apt update; sudo DEBIAN_FRONTEND=noninteractive apt -y install %s" % pkg)
 ```
 :::
 
